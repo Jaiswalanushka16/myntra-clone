@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  border-top: 0.5px solid #c0c0c0;
+  /* overflow: hidden; */
+}
+
+.divider-vertical {
+  border: 0.5px solid #c0c0c0;
+}

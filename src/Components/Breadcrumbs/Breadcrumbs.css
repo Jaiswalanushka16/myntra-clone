@@ -1,0 +1,15 @@
+.breads {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.crumbs {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: smaller;
+}
+#bold {
+  font-weight: bold;
+}
