@@ -20,15 +20,22 @@ function Main(props) {
             style={{
               display: "flex",
               flexDirection: "row",
-              // justifyContent: "space-evenly",
+              justifyContent: "space-evenly",
+              // margin: "auto",
             }}
           >
             {ele.map((e, i) => {
               return (
                 <div className="card" key={i}>
-                  <img width={"100%"} src={e.src} alt="shirt" />
-                  <h5>{e.name}</h5>
-                  <span className="span">{e.desc}</span>
+                  <img width={"100%"} src={e.img1} alt="shirt" />
+                  <h5>{e.brand}</h5>
+                  <span className="span">
+                    {String(e.description)
+                      .replace(e.brand, "")
+                      .split(" ")
+                      .slice(-4)
+                      .join(" ")}
+                  </span>
                   <div
                     style={{
                       fontSize: "small",
@@ -37,7 +44,7 @@ function Main(props) {
                     }}
                   >
                     <b>RS {e.price}</b>
-                    {e.mrp && (
+                    {e.mrp !== e.price && (
                       <span
                         className="span"
                         style={{
@@ -48,7 +55,7 @@ function Main(props) {
                         RS {e.mrp}
                       </span>
                     )}
-                    {e.mrp && (
+                    {e.mrp !== e.price && (
                       <span className="span" style={{ color: "#ED7014" }}>
                         ({Math.round(((e.mrp - e.price) / e.mrp) * 100)}% OFF)
                       </span>

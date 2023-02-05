@@ -34,7 +34,7 @@ function Header(props) {
             }}
             className="flex-row dropdown-border"
           >
-            <span style={{ float: "left", width: "30%", marginLeft: "5%" }}>
+            <span style={{ float: "left", width: "40%", marginLeft: "4%" }}>
               Sort By :
             </span>
             <span

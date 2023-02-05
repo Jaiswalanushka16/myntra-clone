@@ -46,6 +46,7 @@ function Filters(props) {
     <div
       style={{
         borderRight: "0.5px solid #c0c0c0",
+        overflow: "auto",
       }}
     >
       {/* <div className="divider-horizontal"></div> */}
@@ -54,7 +55,7 @@ function Filters(props) {
           <input
             type="radio"
             name="gender"
-            value="men"
+            value="Men"
             onClick={(e) =>
               props.filter({ type: "gender", gender: e.target.value })
             }
@@ -65,7 +66,7 @@ function Filters(props) {
           <input
             type="radio"
             name="gender"
-            value="women"
+            value="Women"
             onClick={(e) =>
               props.filter({ type: "gender", gender: e.target.value })
             }
@@ -166,36 +167,6 @@ function Filters(props) {
         <div>
           <input
             type="checkbox"
-            value="Blackberrys"
-            onClick={(e) => {
-              filterBrands(e);
-            }}
-          />{" "}
-          Blackberrys{" "}
-          <span
-            style={{ fontWeight: "500", color: "#c0c0c0", fontSize: "small" }}
-          >
-            (3178)
-          </span>
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            value="Park Avenues"
-            onClick={(e) => {
-              filterBrands(e);
-            }}
-          />{" "}
-          Park Avenues
-          <span
-            style={{ fontWeight: "500", color: "#c0c0c0", fontSize: "small" }}
-          >
-            (3114)
-          </span>
-        </div>
-        <div>
-          <input
-            type="checkbox"
             value="Roadster"
             onClick={(e) => {
               filterBrands(e);
@@ -256,7 +227,7 @@ function Filters(props) {
         <div>
           <input
             type="checkbox"
-            value="UCB"
+            value="United Colors of Benetton"
             onClick={(e) => {
               filterBrands(e);
             }}

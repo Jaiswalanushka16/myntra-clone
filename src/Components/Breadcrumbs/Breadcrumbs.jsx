@@ -5,11 +5,11 @@ function Breadcrumbs() {
   return (
     <div className="breads">
       <span>
-        <a href="https://www.myntra.com" className="crumbs">
+        <a href="/" className="crumbs">
           Home
         </a>{" "}
         /{" "}
-        <a href="https://www.myntra.com/shirts" className="crumbs" id="bold">
+        <a href="/shirts" className="crumbs" id="bold">
           Shirts For Men & Women
         </a>
       </span>
