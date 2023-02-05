@@ -6,7 +6,6 @@ import Main from "./Components/Main/Main";
 import Header from "./Components/Header/Header";
 import React from "react";
 import { data } from "./Assets/shirts_data";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   // let data = [
