@@ -232,8 +232,10 @@ function App() {
       let newProducts = products;
       newProducts = data.filter((ele) => {
         return (
-          ele.name.toLowerCase().includes(props.searchParams.toLowerCase()) ||
-          ele.desc.toLowerCase().includes(props.searchParams.toLowerCase())
+          ele.brand.toLowerCase().includes(props.searchParams.toLowerCase()) ||
+          ele.description
+            .toLowerCase()
+            .includes(props.searchParams.toLowerCase())
         );
       });
       setProducts(newProducts);
